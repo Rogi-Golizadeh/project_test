@@ -2,6 +2,8 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 from database import Database
 
+# main application
+
 class ApiRestBase(BaseHTTPRequestHandler):
     def set_headers(self, status_code=200):
         self.send_response(status_code)
